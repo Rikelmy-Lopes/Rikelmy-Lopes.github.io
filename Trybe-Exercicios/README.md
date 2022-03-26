@@ -1,1 +1,1 @@
-Esse repositorio contem todas as atividades de aprendizagem desenvolvidas por [Rikelmy Lopes]
+Esse repositorio contem todas as atividades de aprendizagem desenvolvidas por Rikelmy Lopes!
