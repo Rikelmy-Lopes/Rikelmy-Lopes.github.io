@@ -10,6 +10,18 @@
 .site:hover {
     background-color: rgb(0, 157, 47);
 }
+.site2 {
+    background-color: rgb(34, 252, 99);
+    padding: 12px;
+    margin-left: 40px;
+    border-radius: 5%;
+    font-weight: 900;
+    border: 10px;
+    color: black;
+}
+.site2:hover {
+    background-color: rgb(0, 157, 47);
+}
 
 body {
     background-color: rgb(148, 250, 179);
@@ -19,14 +31,17 @@ body {
     display: block;
     position: absolute;
     left: 40%;
-    top: 183px;
+    top: 260px;
+
 }
 #description {
     display: block;
-    position: relative;
-    left: 20%;
-    top: -275px;
-    margin: auto;
+    position: absolute;
+    left: 22%;
+    top: 370px;
+    text-align: left;
+    margin-left: 170px;
+    font-size: 22px;
     font-family: font-family: 'Lavishly Yours', cursive;
     font-family: 'Send Flowers', cursive;;
 }
@@ -50,7 +65,10 @@ p#nac, #cit, #es, #hab {
 }
 #foto {
     display: inline-block;
-    padding: 5px;
-    background-color: rgb(0, 0, 0);
-    
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background-color: black;
+
 }
