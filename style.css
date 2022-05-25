@@ -68,7 +68,7 @@ main {
     height: 40rem;
     z-index: 0;
 }
-.test {
+#first-h1 {
     font-weight: 900;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
@@ -78,4 +78,27 @@ main {
     height: 1px;
     background-color: rgb(153, 153, 153);
     margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    h1 {
+       padding-top: 4.5em;
+    }
+    #first-h1 {
+        font-size: 1.2em;
+    }
+
+    .link {
+     font-size: 0.8em;
+    }
+
+    aside {
+        padding-top: 20%;
+    }
+
+ aside p {
+     font-size: 0.6em;
+ }
 }
