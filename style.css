@@ -96,9 +96,14 @@ main {
 
     aside {
         padding-top: 20%;
+        height: 100%;
     }
 
  aside p {
      font-size: 0.6em;
+ }
+
+ main {
+     height: 100vh;
  }
 }
