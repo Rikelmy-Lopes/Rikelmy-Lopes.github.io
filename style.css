@@ -1,74 +1,81 @@
-.site {
-    background-color: rgb(34, 252, 99);
-    padding: 12px;
-    border-radius: 5%;
-    font-weight: 900;
-    border: 10px;
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.site:hover {
-    background-color: rgb(0, 157, 47);
+header {
+    display: flex;
+    position: fixed;
+    align-content: space-around;
+    flex-direction: column;
+    background-color: rgb(30, 72, 68);
+    z-index: 2;
 }
-.site2 {
-    background-color: rgb(34, 252, 99);
-    padding: 12px;
-    margin-left: 40px;
-    border-radius: 5%;
-    font-weight: 900;
-    border: 10px;
-    color: black;
-}
-.site2:hover {
-    background-color: rgb(0, 157, 47);
+header div {
+   padding: 0.3%;
 }
 
-body {
-    background-color: rgb(148, 250, 179);
+.link {
+    text-decoration: none;
+    color: white;
 }
-#name {
-    font-family: 'Send Flowers', cursive;
-    display: block;
+.link:hover {
+    color:  rgb(7, 32, 29);
+}
+
+.header-img {
+    width: 2.5%;
+}
+
+
+aside {
+    display: flex;
     position: absolute;
-    left: 40%;
-    top: 260px;
-
+    background-color:  rgb(30, 72, 68);
+    position: fixed;
+    height: 40rem;
+    width: 10%;
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    padding-top: 10%;
+    align-items: center;
 }
-#description {
-    display: block;
-    position: absolute;
-    left: 22%;
-    top: 370px;
-    text-align: left;
-    margin-left: 170px;
-    font-size: 22px;
-    font-family: font-family: 'Lavishly Yours', cursive;
-    font-family: 'Send Flowers', cursive;;
-}
-p#nac, #cit, #es, #hab {
-    background-color: rgb(183, 255, 205);
-    color: rgb(0, 0, 0);
-}
-#english {
-    font-size: 40px;
-    color: rgb(33, 106, 78);
-}
-#math {
-    font-size: 35px;
-}
-#hab2 {
-    font-size: 30px;
-    color: rgb(33, 106, 78);
-}
-#confident {
-    font-size: 25px;
-}
-#foto {
+aside p {
     display: inline-block;
-    padding: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    background-color: black;
+    padding: 5%;
+}
+aside hr {
+    display: inline;
+    border: 1px solid;
+    border-color: black;
+}
 
+aside p:hover {
+    color: rgb(7, 32, 29);
+}
+
+h1 {
+    padding: 12%;
+    text-align: center;
+    text-overflow:ellipsis;
+    font-weight: bolder;
+}
+main {
+    position: relative;
+    background-color: rgb(27, 67, 63);
+    color: white;
+    height: 40rem;
+    z-index: 0;
+}
+.test {
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(153, 153, 153);
+    margin-bottom: 15px;
 }
