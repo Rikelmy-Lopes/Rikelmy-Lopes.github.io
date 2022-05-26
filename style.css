@@ -10,6 +10,8 @@ header {
     flex-direction: column;
     background-color: rgb(30, 72, 68);
     z-index: 2;
+    box-shadow: 0px 0px 50px rgb(9, 22, 21);
+    font-family: 'Oswald', sans-serif;
 }
 header div {
    padding: 0.3%;
@@ -40,10 +42,12 @@ aside {
     flex-direction: column;
     padding-top: 10%;
     align-items: center;
+    box-shadow: 0 0 50px rgb(9, 22, 21);
 }
 aside p {
     display: inline-block;
     padding: 5%;
+    font-family: 'Oswald', sans-serif;
 }
 aside hr {
     display: inline;
@@ -69,8 +73,7 @@ main {
     z-index: 0;
 }
 #first-h1 {
-    font-weight: 900;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Anton', sans-serif;
     text-align: left;
 }
 .line {
@@ -81,13 +84,15 @@ main {
 }
 
 
+
 @media screen and (max-width: 450px) {
 
     h1 {
-       padding-top: 4.5em;
+       padding-top: 5em;
+       padding-left: 2.5em;
     }
     #first-h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .link {
@@ -100,10 +105,14 @@ main {
     }
 
  aside p {
-     font-size: 0.6em;
+     font-size: 0.8em;
  }
 
  main {
      height: 100vh;
+ }
+
+ .header-img {
+     width: 1em;
  }
 }
