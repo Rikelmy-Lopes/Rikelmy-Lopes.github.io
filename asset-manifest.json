@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Rikelmy-Lopes/static/css/main.a437bfdc.css",
+    "main.js": "/Rikelmy-Lopes/static/js/main.9f2750f0.js",
+    "static/js/787.128fc6e9.chunk.js": "/Rikelmy-Lopes/static/js/787.128fc6e9.chunk.js",
+    "static/media/640px-Instagram_icon.png": "/Rikelmy-Lopes/static/media/640px-Instagram_icon.589abff3145cc9b21c4e.png",
+    "index.html": "/Rikelmy-Lopes/index.html",
+    "static/media/LI-Bug.svg.original.svg": "/Rikelmy-Lopes/static/media/LI-Bug.svg.original.115d3af0320cfa2e8e34ba26d011a603.svg",
+    "main.a437bfdc.css.map": "/Rikelmy-Lopes/static/css/main.a437bfdc.css.map",
+    "main.9f2750f0.js.map": "/Rikelmy-Lopes/static/js/main.9f2750f0.js.map",
+    "787.128fc6e9.chunk.js.map": "/Rikelmy-Lopes/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a437bfdc.css",
+    "static/js/main.9f2750f0.js"
+  ]
+}
