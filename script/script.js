@@ -14,5 +14,11 @@ for (let index = 0; index < elemetsP.length; index += 1) {
     elemetsP[index].addEventListener('mouseout', changeColorToBefore)
 }
 
+
+
 window.onload = function() {
+  ScrollReveal().reveal('#about', { delay: 500});
+  ScrollReveal().reveal('#jobs', { delay: 500});
 }
+
+window.onscroll
