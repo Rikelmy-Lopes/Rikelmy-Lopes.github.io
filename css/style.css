@@ -21,14 +21,6 @@
     color: #909090;
     font-size: 1.4rem;
   }
-  
-  header #github {
-    padding-left: 5%;
-  }
-  header #instagram {
-    padding-left: 27%;
-  }
-  
   .link {
     text-decoration: none;
     color: white;
@@ -37,54 +29,13 @@
     color:  rgb(7, 32, 29);
   }
   
-  .header-github {
-    width: 15%;
-  }
-  
-  .header-instagram {
-    width: 3.5%;
-  }
-  
-  .header-linkedin {
-    width: 19%;
-  }
-  
-  
-  aside {
-    display: flex;
-    position: absolute;
-    background-color: white;
-    position: fixed;
-    height: 40rem;
-    width: 5%;
-    z-index: 1;
-    color: white;
-    flex-direction: column;
-    padding-top: 3.8%;
-    align-items: center;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.26);
-  }
-  aside p {
-    display: inline-block;
-    padding: 5%;
-    font-family: 'Oswald', sans-serif;
-  }
-  aside hr {
-    display: inline;
-    border: 1px solid;
-    border-color: black;
-  }
-  
-  aside p:hover {
-    color: rgb(7, 32, 29);
-  }
-  
   h1 {
     padding: 12%;
     text-align: center;
     text-overflow:ellipsis;
     font-weight: bolder;
   }
+
   main {
     position: relative;
     background-color: white;
@@ -193,4 +144,70 @@
     align-items: center;
     margin-top: -16em;
     margin-left: 60em;
+  }
+
+  @media screen and (max-width: 425px) {
+    header {
+      font-size: 1em;
+    }
+
+    #first-h1 {
+      padding-top: 3em;
+      font-size: 2em;
+    }
+
+    #about #me {
+      display: inline-block;
+      padding-right: 5%;
+    }
+
+    #jobs p {
+      display: inline-block;
+      padding-right: 5%;
+    }
+
+    #projects {
+      display: block;
+      height: 20em;
+    }
+
+    #projects .projects-deck1 {
+      display: flex;
+      width: 75px;
+      height: 125px;
+      border: 2px solid rgba(0, 0, 0, 0.425);
+      border-radius: 10%;
+      justify-content: center;
+      align-items: center;
+      margin-top: -6em;
+      margin-left: 1em;
+      text-align: center;
+    }
+  
+    #projects .projects-deck2 {
+      display: flex;
+      width: 75px;
+      height: 125px;
+      border: 2px solid rgba(0, 0, 0, 0.425);
+      border-radius: 10%;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8em;
+      margin-left: 9em;
+      text-align: center;
+      
+    }
+  
+    #projects .projects-deck3 {
+      display: flex;
+      width: 75px;
+      height: 125px;
+      border: 2px solid rgba(0, 0, 0, 0.425);
+      border-radius: 10%;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8em;
+      margin-left: 17.5em;
+      text-align: center;
+    }
   }
