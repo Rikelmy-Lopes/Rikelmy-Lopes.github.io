@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Presentation from './components/Presentation';
+import AboutMe from './components/About-Me';
+import Projects from './components/Projects';
+import ContactMe from './components/Contact-Me';
+import Footer from './components/Footer';
+
+const repos = {
+  show: true,
+  heading: "Projetos",
+  gitHubUsername: "Rikelmy-Lopes", //i.e."johnDoe12Gh"
+  reposLength: 0,
+  specificRepos: ['Project-Store-Manager', 'Rikelmy-Lopes.github.io', 'trybe-exercicios', 'Rikelmy-Lopes'],
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Presentation />
+      <AboutMe />
+      <Projects 
+        heading={repos.heading}
+        username={repos.gitHubUsername}
+        length={repos.reposLength}
+        specfic={repos.specificRepos}/>
+        <ContactMe />
+        <Footer />
     </div>
   );
 }
