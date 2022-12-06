@@ -4,14 +4,7 @@ import AboutMe from './components/About-Me';
 import Projects from './components/Projects';
 import ContactMe from './components/Contact-Me';
 import Footer from './components/Footer';
-
-const repos = {
-  show: true,
-  heading: "Projetos",
-  gitHubUsername: "Rikelmy-Lopes", //i.e."johnDoe12Gh"
-  reposLength: 0,
-  specificRepos: ['Project-Store-Manager', 'Rikelmy-Lopes.github.io', 'trybe-exercicios', 'Rikelmy-Lopes'],
-};
+import { repos } from './config'
 
 function App() {
   return (
