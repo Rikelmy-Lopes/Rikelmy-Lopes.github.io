@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from "react";
-import Container from "react-bootstrap/Container";
-import { Jumbotron } from "./migration";
-import Row from "react-bootstrap/Row";
-import ProjectCard from "./ProjectCard";
-import axios from "axios";
+import React, { useState, useEffect, useCallback } from 'react';
+import Container from 'react-bootstrap/Container';
+import { Jumbotron } from './migration';
+import Row from 'react-bootstrap/Row';
+import ProjectCard from './ProjectCard';
+import axios from 'axios';
 
 
 const dummyProject = {
@@ -14,7 +14,7 @@ const dummyProject = {
   languages_url: null,
   pushed_at: null,
 };
-const API = "https://api.github.com";
+const API = 'https://api.github.com';
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
@@ -80,5 +80,7 @@ const Project = ({ heading, username, length, specfic }) => {
     </Jumbotron>
   );
 };
+
+Project.propTypes = {}.isRequired;
 
 export default Project;

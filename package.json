@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://Rikelmy-Lopes.github.io",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -46,6 +47,8 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-plugin-react": "^7.32.1",
     "gh-pages": "^4.0.0"
   }
 }

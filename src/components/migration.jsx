@@ -1,8 +1,8 @@
 import React from 'react';
-import Nav from "react-bootstrap/Nav";
+import Nav from 'react-bootstrap/Nav';
 
 export const Jumbotron = (props) => {
-  const bgStyle = props.style ?? { backgroundColor: "#e9ecef" };
+  const bgStyle = props.style ?? { backgroundColor: '#e9ecef' };
   return (
     <div id={props.id} className={`py-3 ${props.className}`} style={bgStyle}>
       <div className="container py-5">
@@ -10,7 +10,7 @@ export const Jumbotron = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export const NavLink = (props) => {
   return (
@@ -24,4 +24,10 @@ export const NavLink = (props) => {
       </span>
     </Nav.Link>
   );
-}
+};
+
+Jumbotron.propTypes = {
+}.isRequired;
+
+NavLink.propTypes = {
+}.isRequired;

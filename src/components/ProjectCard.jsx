@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Skeleton from "react-loading-skeleton";
-import axios from "axios";
+import React, { useState, useEffect, useCallback } from 'react';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Skeleton from 'react-loading-skeleton';
+import axios from 'axios';
 
 const ProjectCard = ({ value }) => {
   const {
@@ -17,10 +17,10 @@ const ProjectCard = ({ value }) => {
     <Col md={6}>
       <Card className="card p-3 mb-5 bg-black rounded border border-dark">
         <Card.Body style={{
-      fontSize: '200%'
-    }}>
+          fontSize: '200%'
+        }}>
           <Card.Title className='text-white' as="h1">{name || <Skeleton />} </Card.Title>
-          <Card.Text className='text-white'>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
+          <Card.Text className='text-white'>{(!description) ? '' : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
@@ -80,7 +80,7 @@ const Language = ({ languages_url, repo_url }) => {
 
   return (
     <div className="pb-3 text-white">
-      Linguagens:{" "}
+      Linguagens:{' '}
       {array.length
         ? array.map((language) => (
           <a
@@ -91,19 +91,19 @@ const Language = ({ languages_url, repo_url }) => {
             rel="noopener noreferrer"
           >
             <span className="badge bg-dark text-light">
-              {language}:{" "}
+              {language}:{' '}
               {Math.trunc((data[language] / total_count) * 1000) / 10} %
             </span>
           </a>
 
         ))
-        : "code yet to be deployed."}
+        : 'code yet to be deployed.'}
     </div>
   );
 };
 
 const CardFooter = ({ star_count, repo_url, pushed_at }) => {
-  const [updated_at, setUpdated_at] = useState("0 mints");
+  const [updated_at, setUpdated_at] = useState('0 mints');
 
   const handleUpdatetime = useCallback(() => {
     const date = new Date(pushed_at);
@@ -112,12 +112,12 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
     const hours = Math.trunc(diff / 1000 / 60 / 60);
 
     if (hours < 24) {
-      if (hours < 1) return setUpdated_at("agora");
-      let measurement = hours === 1 ? "hora" : "horas";
+      if (hours < 1) return setUpdated_at('agora');
+      let measurement = hours === 1 ? 'hora' : 'horas';
       return setUpdated_at(`${hours.toString()} ${measurement} atrás`);
     } else {
-      const options = { day: "numeric", month: "long", year: "numeric" };
-      const time = new Intl.DateTimeFormat("en-GB", options).format(date);
+      const options = { day: 'numeric', month: 'long', year: 'numeric' };
+      const time = new Intl.DateTimeFormat('en-GB', options).format(date);
       return setUpdated_at(`em ${time}`);
     }
   }, [pushed_at]);
@@ -129,12 +129,12 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
   return (
     <p className="card-text">
       <a
-        href={repo_url + "/stargazers"}
+        href={repo_url + '/stargazers'}
         target=" _blank"
         className="text-dark text-decoration-none"
       >
         <span className="text-white card-link mr-4">
-          <i className="fab fa-github" /> Estrelas{" "}
+          <i className="fab fa-github" /> Estrelas{' '}
           <span className="badge badge-dark">{star_count}</span>
         </span>
       </a>
@@ -144,3 +144,8 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
 };
 
 export default ProjectCard;
+
+ProjectCard.propTypes = {}.isRequired;
+Language.propTypes = {}.isRequired;
+CardButtons.propTypes = {}.isRequired;
+CardFooter.propTypes = {}.isRequired;

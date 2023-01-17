@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 
 function AboutMe() {
-    return (
-        <section id="about" className="about sec-pad">
+  return (
+    <section id="about" className="about sec-pad">
       <div className="main-container">
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">Sobre mim</span>
@@ -25,7 +25,7 @@ function AboutMe() {
               </p>
             </div>
             <a href="./#contact" className="btn-mine btn--med btn--theme dynamicBgClr"
-              >Contato</a
+            >Contato</a
             >
           </div>
           <div className="about__content-skills">
@@ -45,7 +45,7 @@ function AboutMe() {
         </div>
       </div>
     </section>
-    )
+  );
 }
 
-export default AboutMe
+export default AboutMe;

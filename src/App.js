@@ -1,10 +1,11 @@
+import React from 'react';
 import Header from './components/Header';
 import Presentation from './components/Presentation';
 import AboutMe from './components/About-Me';
 import Projects from './components/Projects';
 import ContactMe from './components/Contact-Me';
 import Footer from './components/Footer';
-import { repos } from './config'
+import { repos } from './config';
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         username={repos.gitHubUsername}
         length={repos.reposLength}
         specfic={repos.specificRepos}/>
-        <ContactMe />
-        <Footer />
+      <ContactMe />
+      <Footer />
     </div>
   );
 }
