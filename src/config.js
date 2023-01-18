@@ -3,7 +3,7 @@ export const repos = {
   heading: 'Projetos',
   gitHubUsername: 'Rikelmy-Lopes',
   reposLength: 0,
-  specificRepos: ['Project-Futebol-Club', 'Project-Blogs-API', 'Project-Store-Manager', 'Rikelmy-Lopes.github.io'],
+  specificRepos: ['Project-Futebol-Club', 'Project-Car-Shop', 'Project-Blogs-API', 'Project-Store-Manager'],
 };
 
 export const emailjsInfo = {

@@ -34,11 +34,13 @@ function AboutMe() {
               <div className="skills__skill">Javascript</div>
               <div className="skills__skill">Typescript</div>
               <div className="skills__skill">NodeJs</div>
-              <div className="skills__skill">MySql</div>
               <div className="skills__skill">ExpressJs</div>
-              <div className="skills__skill">MongoDB</div>
-              <div className="skills__skill">POO</div>
+              <div className="skills__skill">MySQL</div>
               <div className="skills__skill">Sequelize</div>
+              <div className="skills__skill">MongoDB</div>
+              <div className="skills__skill">Mongoose</div>
+              <div className="skills__skill">Git</div>
+              <div className="skills__skill">POO</div>
               <div className="skills__skill">Docker</div>
             </div>
           </div>

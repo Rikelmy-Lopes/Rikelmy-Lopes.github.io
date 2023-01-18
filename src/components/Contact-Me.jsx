@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { emailjsInfo } from '../config';
 
 function ContactMe() {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   emailjs.init(emailjsInfo.publicKey);
 
@@ -27,7 +27,6 @@ function ContactMe() {
       from_email: email,
       message: message,
     };
-
     if (!isNameMessageValid()) {
       alert('Nome ou Mensagem Inválido');
       return;
