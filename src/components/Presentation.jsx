@@ -6,16 +6,14 @@ import instaIcon from '../assets/png/insta-ico.png';
 
 function Presentation() {
   return(
-    <section className="home-hero">
+    <section className="home-hero" id='home'>
       <div className="home-hero__content">
         <h1 className="heading-primary">Olá, Meu nome é Rikelmy</h1>
         <br />
         <h1 className="heading-primary">Back-end Developer</h1>
         <div className="home-hero__info">
           <p className="text-primary-mine">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente solutions for
-            complex problems
+          Transformando ideias em soluções robustas e escaláveis com o poder da tecnologia!
           </p>
         </div>
         <div className="home-hero__cta">
@@ -24,7 +22,7 @@ function Presentation() {
       </div>
       <div className="home-hero__socials">
         <div className="home-hero__social">
-          <a href="https://www.linkedin.com/in/rikelmy-lopes-0a3b38238/" target={'_blank'} 
+          <a href="https://www.linkedin.com/in/rikelmy-lopes/" target={'_blank'} 
             className="home-hero__social-icon-link" rel="noreferrer">
             <img
               src={linkedinIcon}

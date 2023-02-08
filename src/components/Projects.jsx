@@ -56,30 +56,33 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <Jumbotron fluid id="projects" className="bg-white m-0">
-      <Container  className="">
-        <h2 className="display-3 pb-5 text-center projects-sec__main">
-          {heading}
-        </h2>
-        <Row>
-          {projectsArray.length
-            ? projectsArray.map((project, index) => (
-              <ProjectCard
-                key={`project-card-${index}`}
-                id={`project-card-${index}`}
-                value={project}
-              />
-            ))
-            : dummyProjectsArr.map((project, index) => (
-              <ProjectCard
-                key={`dummy-${index}`}
-                id={`dummy-${index}`}
-                value={project}
-              />
-            ))}
-        </Row>
-      </Container>
-    </Jumbotron>
+    <div id="projects" className='projects-container'>
+      <Jumbotron fluid id="projects" className="bg-white m-0">
+        <Container>
+          <h2 className="display-3 pb-5 text-center">
+            <span className='projects-sec__main' > { heading } </span>
+            <span className='heading-sec__sub'> Alguns Projetos Back-end Desenvolvidos por Mim! </span>
+          </h2>
+          <Row>
+            {projectsArray.length
+              ? projectsArray.map((project, index) => (
+                <ProjectCard
+                  key={`project-card-${index}`}
+                  id={`project-card-${index}`}
+                  value={project}
+                />
+              ))
+              : dummyProjectsArr.map((project, index) => (
+                <ProjectCard
+                  key={`dummy-${index}`}
+                  id={`dummy-${index}`}
+                  value={project}
+                />
+              ))}
+          </Row>
+        </Container>
+      </Jumbotron>
+    </div>
   );
 };
 

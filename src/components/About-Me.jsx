@@ -7,8 +7,7 @@ function AboutMe() {
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">Sobre mim</span>
           <span className="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
+            Um pequeno resumo para você me conhecer melhor
           </span>
         </h2>
         <div className="about__content">
@@ -16,9 +15,17 @@ function AboutMe() {
             <h3 className="about__content-title">Me conheça melhor!</h3>
             <div className="about__content-details">
               <p className="about__content-details-para">
-                Olá, Eu sou o
-                <strong> Rikelmy</strong>
-                <strong>, Back-end Developer </strong>, atualmente Moro em Veredinha-MG.
+              Meu nome é Rikelmy e tenho 19 anos, sou natural de Veredinha, apaixonado por tecnologia e sempre 
+              em busca de novos desafios como desenvolvedor Back-end. Me formei através do curso da Trybe e 
+              agora possuo habilidades em Javascript, Typescript, Nodejs, ExpressJs, Mysql, sequelize, mongodb, 
+              moongose, programação orientada a objetos e docker. Acredito que esses conhecimentos técnicos 
+              combinados com minha paixão por tecnologia me permitem criar soluções robustas 
+              e escaláveis para os negócios. <br /> <br />
+              Além disso, sou uma pessoa colaborativa, resiliente, com boa gestão do tempo e organizada, o que 
+              me permite trabalhar de forma eficiente com equipes diversas. Meu objetivo é continuar evoluindo 
+              em minha carreira como desenvolvedor back-end, trabalhando em projetos desafiadores que me 
+              permitam aprimorar minhas habilidades técnicas e soft skills, e contribuir para a evolução da 
+              tecnologia de forma significativa!
               </p>
               <p className="about__content-details-para">
                 <strong> </strong>

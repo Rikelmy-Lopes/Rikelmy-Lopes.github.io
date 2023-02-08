@@ -27,31 +27,31 @@ function Header() {
     }
   };
 
-  window.onload = () => {
-    const smallMenu = document.querySelector('.header__sm-menu');
-    const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
-    const headerHamMenuCloseBtn = document.querySelector(
-      '.header__main-ham-menu-close'
-    );
+  // window.onload = () => {
+  //   const smallMenu = document.querySelector('.header__sm-menu');
+  //   const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
+  //   const headerHamMenuCloseBtn = document.querySelector(
+  //     '.header__main-ham-menu-close'
+  //   );
   
-    const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
+  //   const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
   
-    for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-      headerSmallMenuLinks[i].addEventListener('click', () => {
-        smallMenu.classList.remove('header__sm-menu--active');
-        headerHamMenuBtn.classList.remove('d-none');
-        headerHamMenuCloseBtn.classList.add('d-none');
-      });
-    }
+  //   for (let i = 0; i < headerSmallMenuLinks.length; i++) {
+  //     headerSmallMenuLinks[i].addEventListener('click', () => {
+  //       smallMenu.classList.remove('header__sm-menu--active');
+  //       headerHamMenuBtn.classList.remove('d-none');
+  //       headerHamMenuCloseBtn.classList.add('d-none');
+  //     });
+  //   }
       
-    // ---
-    const headerLogoConatiner = document.querySelector('.header__logo-container');
+  //   // ---
+  //   const headerLogoConatiner = document.querySelector('.header__logo-container');
       
-    headerLogoConatiner.addEventListener('click', () => {
-      // eslint-disable-next-line no-restricted-globals
-      location.href = 'index.html';
-    });
-  };
+  //   headerLogoConatiner.addEventListener('click', () => {
+  //     // eslint-disable-next-line no-restricted-globals
+  //     location.href = 'index.html';
+  //   });
+  // };
 
 
   return (
@@ -70,18 +70,18 @@ function Header() {
         <div className="header__main">
           <ul className="header__links">
             <li className="header__link-wrapper">
-              <a href="./index.html" className="header__link"> Home </a>
+              <a  href="#home" className="header__link"> Home </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./index.html#about" className="header__link">Sobre </a>
+              <a href="#about" className="header__link">Sobre </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./index.html#projects" className="header__link">
+              <a href="#projects" className="header__link">
                   Projetos
               </a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./index.html#contact" className="header__link"> Contato </a>
+              <a href="#contact" className="header__link"> Contato </a>
             </li>
           </ul>
           <div className="header__main-ham-menu-cont"
@@ -103,19 +103,19 @@ function Header() {
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="#home"> Home </a>
             </li>
   
             <li className="header__sm-menu-link">
-              <a href="./index.html#about"> Sobre </a>
+              <a href="#about"> Sobre </a>
             </li>
   
             <li className="header__sm-menu-link">
-              <a href="./index.html#projects"> Projetos </a>
+              <a href="#projects"> Projetos </a>
             </li>
   
             <li className="header__sm-menu-link">
-              <a href="./index.html#contact"> Contato </a>
+              <a href="#contact"> Contato </a>
             </li>
           </ul>
         </div>

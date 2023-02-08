@@ -40,8 +40,7 @@ function Footer() {
           <div className="main-footer__row main-footer__row-2">
             <h4 className="heading heading-sm text-lt">Rikelmy Lopes</h4>
             <p className="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+            A tecnologia move o mundo - Steve Jobs
             </p>
           </div>
         </div>

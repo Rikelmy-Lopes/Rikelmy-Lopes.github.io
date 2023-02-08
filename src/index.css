@@ -44,7 +44,12 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+}
+
+.projects-container {
+  padding-top: 8rem;
+}
 
 li {
   list-style: none; }
