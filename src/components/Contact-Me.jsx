@@ -16,7 +16,27 @@ function ContactMe() {
   };
   const isNameMessageValid = () => {
     const regex = /[a-zA-Z]/;
-    return regex.test(name) && regex.test(message);
+    return regex.test(name) && regex.test(message) && message.length >= 10;
+  };
+
+  const statusFormError = () => {
+    const message = document.getElementById('status-form');
+    message.innerText = 'Email não enviado, tente novamente!';
+    message.style.backgroundColor = 'red';
+    message.style.visibility = 'visible';
+    setTimeout(() => {
+      message.style.visibility = 'hidden';
+    }, 3000);
+  };
+
+  const statusFormSuccess = () => {
+    const message = document.getElementById('status-form');
+    message.innerText = 'Email enviado com Sucesso!!!';
+    message.style.backgroundColor = 'green';
+    message.style.visibility = 'visible';
+    setTimeout(() => {
+      message.style.visibility = 'hidden';
+    }, 3000);
   };
 
   const sendEmail = (e) => {
@@ -27,22 +47,15 @@ function ContactMe() {
       from_email: email,
       message: message,
     };
-    if (!isNameMessageValid()) {
-      alert('Nome ou Mensagem Inválido');
-      return;
-    }
-
-    if(!isEmailValid()) {
-      alert('Email Inválido');
-      return;
-    }
 
     emailjs.send(emailjsInfo.serviceId, emailjsInfo.templateId, template_params)
       .then(() => {
-        alert('Email enviado com Sucesso!!!');
+        statusFormSuccess();
         setName(''); setEmail(''); setMessage('');
-      }, (error) => {
-        alert('Ocorreu um Erro ao enviar o Email!', error);
+      })
+      .catch((error) => {
+        console.log(error);
+        statusFormError();
       });
   };
 
@@ -60,7 +73,7 @@ function ContactMe() {
               <label className="contact__form-label" htmlFor="name">Nome</label>
               <input
                 required
-                placeholder="Preencha com seu Nome"
+                placeholder="Seu nome aqui"
                 type="text"
                 className="contact__form-input"
                 name="name"
@@ -73,8 +86,8 @@ function ContactMe() {
               <label className="contact__form-label" htmlFor="email">Email</label>
               <input
                 required
-                placeholder="Preencha com seu Email"
-                type="text"
+                placeholder="nome@exemplo.com"
+                type="email"
                 className="contact__form-input"
                 name="email"
                 id="email"
@@ -89,20 +102,24 @@ function ContactMe() {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Preencha com sua Mensagem"
+                placeholder="Escreva sua mensagem aqui"
                 name="message"
                 id="message"
                 onChange={({target}) => setMessage(target.value)}
                 value={ message }
               ></textarea>
             </div>
-            <button 
-              type="submit" 
-              className="btn-mine btn--theme contact__btn"
-              onClick={ sendEmail }
-            >
+            <div className='contact-card-button'>
+              <span id='status-form'></span>
+              <button
+                disabled={ !(isEmailValid() && isNameMessageValid()) }
+                type="submit" 
+                className="btn-mine btn--theme contact__btn"
+                onClick={ sendEmail }
+              >
               Enviar
-            </button>
+              </button>
+            </div>
           </form>
         </div>
       </div>

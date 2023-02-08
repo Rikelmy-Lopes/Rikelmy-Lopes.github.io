@@ -63,7 +63,6 @@ textarea {
   resize: none; }
 
 .heading-primary {
-  font-weight: 700;
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -85,8 +84,7 @@ textarea {
       margin-bottom: 8rem; } }
 
 .heading-sec__main {
-  color: black;
-  font-weight: 700;
+  color: white;
   display: block;
   font-size: 4rem;
   text-transform: uppercase;
@@ -106,7 +104,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: black;
+    background: rgb(60, 207, 145);
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -130,7 +128,6 @@ textarea {
     color: #eee; }
 
 .heading-sm {
-  font-weight: 700;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -141,8 +138,8 @@ textarea {
   width: 92%; }
 
 .btn-mine {
-  background: #fff;
-  color: #333;
+  background: rgb(40, 40, 40);
+  color: rgb(200, 200, 200);
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
@@ -150,16 +147,9 @@ textarea {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
-
-.btn-mine:disabled {
-  cursor: not-allowed;
-  background-color: white;
-  color: #999;
-}
-
-  .btn-mine:hover:not(:disabled) {
-    background-color: rgb(30, 30, 30);
-    color: white;
+  .btn-mine:hover {
+    background-color: white;
+    color: rgb(70, 70, 70);
     transform: translateY(-3px); }
   .btn--bg {
     padding: 1.5rem 8rem;
@@ -168,8 +158,8 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: black;
-    color: #fff; }
+    background: rgb(40, 40, 40);
+    color: rgb(200, 200, 200); }
   .btn--theme-inv {
     color: #0062b9;
     background: #fff;
@@ -198,9 +188,8 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/jpeg/background-white.jpeg);
+  background: linear-gradient(to right, rgba(84, 206, 200, 0.9), rgba(60, 199, 192, 0.9)), url(./assets/svg/common-bg.svg);
   background-position: center;
-  background-size: cover;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -261,7 +250,7 @@ textarea {
     text-align: center; }
 
 .about {
-  background: #fafafa; }
+  background: black; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -271,7 +260,7 @@ textarea {
         grid-template-columns: 1fr;
         grid-gap: 8rem; } }
     .about__content-title {
-      color: black;
+      color: white;
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem; }
@@ -338,8 +327,7 @@ textarea {
           font-size: 1.7rem; } }
 
           .projects-sec__main {
-            font-weight: 700;
-            color: black;
+            color: white;
             display: block;
             font-size: 4rem;
             text-transform: uppercase;
@@ -349,13 +337,15 @@ textarea {
             margin-bottom: 3.5rem;
             position: relative; }
 
+
+
     .projects-sec__main::after {
       content: '';
       position: absolute;
       top: calc(75% + 1.5rem);
       height: 5px;
       width: 3rem;
-      background: black;
+      background: rgb(60, 207, 145);
       left: 50%;
       transform: translateX(-50%);
       border-radius: 5px; }
@@ -363,17 +353,14 @@ textarea {
         .projects-sec__main::after {
           top: calc(100% + 1.2rem); } }
 
-    .project-title {
-      font-weight: 700;
-    }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(60, 150, 145, 0.8), rgba(60, 150, 145, 0.8)), url(./assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: white;
+    background: black;
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -390,7 +377,7 @@ textarea {
       .contact__form-field {
         margin-bottom: 3rem; } }
   .contact__form-label {
-    color: #666;
+    color: rgb(200, 200, 200);
     font-size: 1.4rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -398,13 +385,13 @@ textarea {
     display: block;
     text-align: left; }
   .contact__form-input {
-    color: #333;
+    color: rgb(200, 200, 200);
     padding: 2rem;
     width: 100%;
-    border: 1px solid #ebebeb;
+    border: 1px solid #797979;
     font-size: 1.6rem;
     letter-spacing: 0px;
-    background: #f0f0f0;
+    background: rgb(40, 40, 40);
     border-radius: 5px;
     font-weight: 600;
     /* Code for Modern Browsers */
@@ -446,25 +433,6 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .contact__btn {
         width: 100%; } }
-
-  .contact-card-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-card-button > span {
-    font-size: 15px;
-    display: block;
-    position: relative;
-    visibility: hidden;
-    width: fit-content;
-    border-radius: 5px;
-    padding: 5px 13px;
-    color: white;
-  }
 
 .project-cs-hero {
   color: #fff;
@@ -561,8 +529,8 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
+  background: white;
+  background: black;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
     display: flex;
@@ -578,13 +546,15 @@ textarea {
     cursor: pointer;
     color: #333;
     transition: color .3s; }
+    .header__logo-container:hover {
+      color: #0062b9; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: rgb(70, 70, 70); }
+    background: black; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -597,6 +567,7 @@ textarea {
     object-position: center;
     display: block; }
   .header__logo-sub {
+    color: white;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -610,13 +581,13 @@ textarea {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: rgb(70, 70, 70);
+    color: rgb(199, 199, 199);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: black; }
+      color: #ffffff; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -655,7 +626,7 @@ textarea {
     text-decoration: none;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
-    color: rgb(70, 70, 70);
+    color: #333;
     text-align: right;
     border-bottom: 1px solid #eee;
     font-weight: 700;
@@ -663,15 +634,15 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: black; }
+      color: #0062b9; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
     border-bottom: 0; }
 
 .main-footer {
-  background: black;
-  color: white; }
+  background: #000;
+  color: #fff; }
   .main-footer__upper {
     display: flex;
     justify-content: space-between;
@@ -696,13 +667,12 @@ textarea {
         width: 100%; } }
   .main-footer__short-desc {
     margin-top: 2rem;
-    color: white;
+    color: #eee;
     font-size: 1.5rem;
     line-height: 1.7; }
   .main-footer__social-cont {
     margin-top: 2rem; }
   .main-footer__icon {
-    background-color: #000;
     margin-right: 1rem;
     width: 2.5rem; }
     .main-footer__icon--mr-none {
@@ -755,17 +725,6 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
-
-
-  ::-webkit-scrollbar {
-    display: block;
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: rgb(199, 199, 199);
-    border-radius: 100px;
-  }
 
 @keyframes wheel {
   to {

@@ -15,12 +15,12 @@ const ProjectCard = ({ value }) => {
   } = value;
   return (
     <Col md={6}>
-      <Card className="card p-3 mb-5 bg-black rounded border border-dark">
+      <Card className="card p-3 mb-5 bg-white rounded border border-dark">
         <Card.Body style={{
           fontSize: '200%'
         }}>
-          <Card.Title className='text-white' as="h1">{name || <Skeleton />} </Card.Title>
-          <Card.Text className='text-white'>{(!description) ? '' : description || <Skeleton count={3} />} </Card.Text>
+          <Card.Title className='text-black project-title' as="h1">{name || <Skeleton />} </Card.Title>
+          <Card.Text className='text-black'>{(!description) ? '' : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
@@ -79,7 +79,7 @@ const Language = ({ languages_url, repo_url }) => {
   }
 
   return (
-    <div className="pb-3 text-white">
+    <div className="pb-3 text-black">
       Linguagens:{' '}
       {array.length
         ? array.map((language) => (
@@ -117,7 +117,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
       return setUpdated_at(`${hours.toString()} ${measurement} atrás`);
     } else {
       const options = { day: 'numeric', month: 'long', year: 'numeric' };
-      const time = new Intl.DateTimeFormat('en-GB', options).format(date);
+      const time = new Intl.DateTimeFormat('pt-br', options).format(date);
       return setUpdated_at(`em ${time}`);
     }
   }, [pushed_at]);
@@ -133,12 +133,12 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
         target=" _blank"
         className="text-dark text-decoration-none"
       >
-        <span className="text-white card-link mr-4">
+        <span className="text-black card-link mr-4">
           <i className="fab fa-github" /> Estrelas{' '}
-          <span className="badge badge-dark">{star_count}</span>
+          <span style={{color: 'black'}} className="badge badge-light">{star_count}</span>
         </span>
       </a>
-      <small className="text-white">Atualizado {updated_at}</small>
+      <small className="text-black">Atualizado {updated_at}</small>
     </p>
   );
 };

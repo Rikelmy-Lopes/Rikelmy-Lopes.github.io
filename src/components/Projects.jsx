@@ -56,9 +56,11 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <Jumbotron fluid id="projects" className="bg-black m-0">
+    <Jumbotron fluid id="projects" className="bg-white m-0">
       <Container  className="">
-        <h2 className="display-3 pb-5 text-center projects-sec__main">{heading}</h2>
+        <h2 className="display-3 pb-5 text-center projects-sec__main">
+          {heading}
+        </h2>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
