@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import { emailjsInfo } from '../config';
 import '../style/ContactMe.css';
+import { Fade } from 'react-reveal';
 
 function ContactMe() {
   const [name, setName] = useState('');
@@ -63,66 +64,69 @@ function ContactMe() {
   return (
     <section id="contact" className="contact sec-pad dynamicBg">
       <div className="main-container">
-        <h2 className="heading heading-sec heading-sec__mb-med">
-          <span className="heading-sec__main heading-sec__main--lt">Contato</span>
-          <span className="heading-sec__sub heading-sec__sub--lt">
-          </span>
-        </h2>
-        <div className="contact__form-container">
-          <form action="#" className="contact__form">
-            <div className="contact__form-field">
-              <label className="contact__form-label" htmlFor="name">Nome</label>
-              <input
-                required
-                placeholder="Seu nome aqui"
-                type="text"
-                className="contact__form-input"
-                name="name"
-                id="name"
-                onChange={({target}) => setName(target.value)}
-                value={ name }
-              />
-            </div>
-            <div className="contact__form-field">
-              <label className="contact__form-label" htmlFor="email">Email</label>
-              <input
-                required
-                placeholder="nome@exemplo.com"
-                type="email"
-                className="contact__form-input"
-                name="email"
-                id="email"
-                onChange={({target}) => setEmail(target.value)}
-                value={ email }
-              />
-            </div>
-            <div className="contact__form-field">
-              <label className="contact__form-label" htmlFor="message">Mensagem</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                className="contact__form-input"
-                placeholder="Escreva sua mensagem aqui"
-                name="message"
-                id="message"
-                onChange={({target}) => setMessage(target.value)}
-                value={ message }
-              ></textarea>
-            </div>
-            <div className='contact-card-button'>
-              <span id='status-form'></span>
-              <button
-                disabled={ !(isEmailValid() && isNameMessageValid()) }
-                type="submit" 
-                className="btn-mine btn--theme contact__btn"
-                onClick={ sendEmail }
-              >
+        <Fade bottom duration={1500}>
+          <h2 className="heading heading-sec heading-sec__mb-med">
+            <span className="heading-sec__main heading-sec__main--lt">Contato</span>
+            <span className="heading-sec__sub heading-sec__sub--lt"></span>
+          </h2>
+        </Fade>
+        <Fade right duration={2000}>
+          <div className="contact__form-container">
+            <form action="#" className="contact__form">
+              <div className="contact__form-field">
+                <label className="contact__form-label" htmlFor="name">Nome</label>
+                <input
+                  required
+                  placeholder="Seu nome aqui"
+                  type="text"
+                  className="contact__form-input"
+                  name="name"
+                  id="name"
+                  onChange={({target}) => setName(target.value)}
+                  value={ name }
+                />
+              </div>
+              <div className="contact__form-field">
+                <label className="contact__form-label" htmlFor="email">Email</label>
+                <input
+                  required
+                  placeholder="nome@exemplo.com"
+                  type="email"
+                  className="contact__form-input"
+                  name="email"
+                  id="email"
+                  onChange={({target}) => setEmail(target.value)}
+                  value={ email }
+                />
+              </div>
+              <div className="contact__form-field">
+                <label className="contact__form-label" htmlFor="message">Mensagem</label>
+                <textarea
+                  required
+                  cols="30"
+                  rows="10"
+                  className="contact__form-input"
+                  placeholder="Escreva sua mensagem aqui"
+                  name="message"
+                  id="message"
+                  onChange={({target}) => setMessage(target.value)}
+                  value={ message }
+                ></textarea>
+              </div>
+              <div className='contact-card-button'>
+                <span id='status-form'></span>
+                <button
+                  disabled={ !(isEmailValid() && isNameMessageValid()) }
+                  type="submit" 
+                  className="btn-mine btn--theme contact__btn"
+                  onClick={ sendEmail }
+                >
               Enviar
-              </button>
-            </div>
-          </form>
-        </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </Fade>
       </div>
     </section>
   );

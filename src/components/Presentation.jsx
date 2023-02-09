@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/Presentation.css';
 import Typewriter from 'typewriter-effect';
+import { Fade } from 'react-reveal';
 
 import linkedinIcon from '../assets/png/linkedin-ico.png';
 import githubIcon from '../assets/png/github-ico.png';
@@ -20,11 +21,14 @@ function Presentation() {
             options={ { 
               delay: 80, 
               cursor: null, 
-              wrapperClassName: 'text-primary-mine'
+              wrapperClassName: 'text-primary-mine',
+
             } }
-            onInit={(typewriter) => {
-              typewriter.typeString(text)
-                .start();
+            onInit={ (typewriter) => {
+              setTimeout(() => {
+                typewriter.typeString(text)
+                  .start();
+              }, 500);
             }}
           />
         </div>
@@ -32,40 +36,42 @@ function Presentation() {
           <a href="./#projects" className="btn-mine btn--bg">Projetos</a>
         </div>
       </div>
-      <div className="home-hero__socials">
-        <div className="home-hero__social">
-          <a href="https://www.linkedin.com/in/rikelmy-lopes/" target={'_blank'} 
-            className="home-hero__social-icon-link" rel="noreferrer">
-            <img
-              src={linkedinIcon}
-              alt="icon"
-              className="home-hero__social-icon"
-            />
-          </a>
+      <Fade left duration={1500}>
+        <div className="home-hero__socials">
+          <div className="home-hero__social">
+            <a href="https://www.linkedin.com/in/rikelmy-lopes/" target={'_blank'} 
+              className="home-hero__social-icon-link" rel="noreferrer">
+              <img
+                src={linkedinIcon}
+                alt="icon"
+                className="home-hero__social-icon"
+              />
+            </a>
+          </div>
+          <div className="home-hero__social">
+            <a href="https://github.com/Rikelmy-Lopes" target={'_blank'}
+              className="home-hero__social-icon-link" rel="noreferrer">
+              <img
+                src={githubIcon}
+                alt="icon"
+                className="home-hero__social-icon"
+              />
+            </a>
+          </div>
+          <div className="home-hero__social">
+            <a
+              href="https://www.instagram.com/rikelmy_lopes18/" target={'_blank'}
+              className="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer"
+            >
+              <img
+                src={instaIcon}
+                alt="icon"
+                className="home-hero__social-icon"
+              />
+            </a>
+          </div>
         </div>
-        <div className="home-hero__social">
-          <a href="https://github.com/Rikelmy-Lopes" target={'_blank'}
-            className="home-hero__social-icon-link" rel="noreferrer">
-            <img
-              src={githubIcon}
-              alt="icon"
-              className="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div className="home-hero__social">
-          <a
-            href="https://www.instagram.com/rikelmy_lopes18/" target={'_blank'}
-            className="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer"
-          >
-            <img
-              src={instaIcon}
-              alt="icon"
-              className="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
+      </Fade>
       <div className="home-hero__mouse-scroll-cont">
         <div className="mouse"></div>
       </div>
