@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import React from 'react';
 import { useState } from 'react';
 import { emailjsInfo } from '../config';
+import '../style/ContactMe.css';
 
 function ContactMe() {
   const [name, setName] = useState('');

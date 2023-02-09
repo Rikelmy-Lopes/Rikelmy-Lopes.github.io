@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import '../style/Projects.css';
 import Container from 'react-bootstrap/Container';
 import { Jumbotron } from './migration';
 import Row from 'react-bootstrap/Row';
@@ -57,7 +58,7 @@ const Project = ({ heading, username, length, specfic }) => {
 
   return (
     <div id="projects" className='projects-container'>
-      <Jumbotron fluid id="projects" className="bg-white m-0">
+      <Jumbotron fluid className="bg-white m-0">
         <Container>
           <h2 className="display-3 pb-5 text-center">
             <span className='projects-sec__main' > { heading } </span>

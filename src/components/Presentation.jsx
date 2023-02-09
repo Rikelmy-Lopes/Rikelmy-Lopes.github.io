@@ -1,10 +1,14 @@
 import React from 'react';
+import '../style/Presentation.css';
+import Typewriter from 'typewriter-effect';
 
 import linkedinIcon from '../assets/png/linkedin-ico.png';
 import githubIcon from '../assets/png/github-ico.png';
 import instaIcon from '../assets/png/insta-ico.png';
 
 function Presentation() {
+  const text = 'Transformando ideias em soluções robustas e escaláveis com o poder da tecnologia!';
+
   return(
     <section className="home-hero" id='home'>
       <div className="home-hero__content">
@@ -12,9 +16,17 @@ function Presentation() {
         <br />
         <h1 className="heading-primary">Back-end Developer</h1>
         <div className="home-hero__info">
-          <p className="text-primary-mine">
-          Transformando ideias em soluções robustas e escaláveis com o poder da tecnologia!
-          </p>
+          <Typewriter
+            options={ { 
+              delay: 80, 
+              cursor: null, 
+              wrapperClassName: 'text-primary-mine'
+            } }
+            onInit={(typewriter) => {
+              typewriter.typeString(text)
+                .start();
+            }}
+          />
         </div>
         <div className="home-hero__cta">
           <a href="./#projects" className="btn-mine btn--bg">Projetos</a>

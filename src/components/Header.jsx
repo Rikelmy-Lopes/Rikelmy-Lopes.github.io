@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/Header.css';
 
 import profileImage from '../assets/jpeg/profile-image.jpg';
 import hamMenu from '../assets/svg/ham-menu.svg';
