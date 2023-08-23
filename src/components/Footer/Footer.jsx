@@ -44,6 +44,7 @@ function Footer() {
               <p className="main-footer__short-desc">
                 A tecnologia move o mundo - Steve Jobs
               </p>
+              <p style={{ fontSize: '12px'}}>Copyright © 2023 Rikelmy Lopes</p>
             </div>
           </div>
         </div>

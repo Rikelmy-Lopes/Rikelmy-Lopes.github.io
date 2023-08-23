@@ -64,7 +64,7 @@ const Project = ({ heading, username, length, specfic }) => {
           <Fade up duration={1500}>
             <h2 className="display-3 pb-5 text-center">
               <span className='projects-sec__main' > {heading} </span>
-              <span className='heading-sec__sub'> Alguns Projetos Back-end Desenvolvidos por Mim! </span>
+              <span className='heading-sec__sub'> Alguns Projetos Desenvolvidos por Mim! </span>
             </h2>
           </Fade>
           <Row>
