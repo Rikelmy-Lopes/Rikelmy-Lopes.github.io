@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { emailjsInfo } from '../../config';
 import './ContactMe.css';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 function ContactMe() {
   const [name, setName] = useState('');
@@ -63,13 +63,13 @@ function ContactMe() {
   return (
     <section id="contact" className="contact sec-pad dynamicBg">
       <div className="main-container">
-        <Fade bottom duration={1500}>
+        <Fade triggerOnce direction='uṕ' duration={1500}>
           <h2 className="heading heading-sec heading-sec__mb-med">
             <span className="heading-sec__main heading-sec__main--lt">Contato</span>
             <span className="heading-sec__sub heading-sec__sub--lt"></span>
           </h2>
         </Fade>
-        <Fade right duration={2000}>
+        <Fade triggerOnce direction='right' duration={2000}>
           <div className="contact__form-container">
             <form action="#" className="contact__form">
               <div className="contact__form-field">

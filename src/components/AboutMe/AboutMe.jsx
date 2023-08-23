@@ -1,12 +1,11 @@
-import React from 'react';
 import './AboutMe.css';
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 function AboutMe() {
   return (
     <section id="about" className="about sec-pad">
       <div className="main-container">
-        <Fade bottom duration={1500}>
+        <Fade triggerOnce direction='down' duration={1500}>
           <h2 className="heading heading-sec heading-sec__mb-med">
             <span className="heading-sec__main">Sobre mim</span>
             <span className="heading-sec__sub">
@@ -16,10 +15,10 @@ function AboutMe() {
         </Fade>
         <div className="about__content">
           <div className="about__content-main">
-            <Fade left duration={1000}>
+            <Fade triggerOnce direction='left' duration={1000}>
               <h3 className="about__content-title">Me conheça melhor!</h3>
             </Fade>
-            <Fade left duration={2000}>
+            <Fade triggerOnce direction='left' duration={2000}>
               <div className="about__content-details">
                 <p className="about__content-details-para">
                   Meu nome é Rikelmy e tenho 19 anos, sou natural de Veredinha, apaixonado por tecnologia e sempre
@@ -39,16 +38,16 @@ function AboutMe() {
                 </p>
               </div>
             </Fade>
-            <Fade left duration={2000}>
+            <Fade triggerOnce direction='left' duration={2000}>
               <a href="./#contact" className="btn-mine btn--med btn--theme dynamicBgClr"
               >Contato </a>
             </Fade>
           </div>
           <div className="about__content-skills">
-            <Fade right duration={1000}>
+            <Fade triggerOnce direction='right' duration={1000}>
               <h3 className="about__content-title">Minhas Habilidades</h3>
             </Fade>
-            <Fade right duration={2000}>
+            <Fade triggerOnce direction='right' duration={2000}>
               <div className="skills">
                 <div className="skills__skill">Javascript</div>
                 <div className="skills__skill">Typescript</div>

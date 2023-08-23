@@ -1,4 +1,4 @@
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 import './Header.css';
 
 import profileImage from '../../assets/jpeg/profile-image.jpg';
@@ -56,7 +56,7 @@ function Header() {
 
 
   return (
-    <Fade top duration={1500}>
+    <Fade triggerOnce direction='down' duration={1500}>
       <header className="header">
         <div className="header__content">
           <div className="header__logo-container">
