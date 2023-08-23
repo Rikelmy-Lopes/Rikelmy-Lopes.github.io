@@ -21,7 +21,7 @@ function AboutMe() {
             <Fade left duration={2000}>
               <div className="about__content-details">
                 <p className="about__content-details-para">
-                  Meu nome é Rikelmy e tenho 19 anos, sou natural de Veredinha, apaixonado por tecnologia e sempre
+                  Meu nome é Rikelmy e tenho 20 anos, sou natural de Veredinha, apaixonado por tecnologia e sempre
                   em busca de novos desafios como desenvolvedor Back-end. Me formei através do curso da Trybe e
                   agora possuo habilidades em Javascript, Typescript, Nodejs, ExpressJs, Mysql, sequelize, mongodb,
                   moongose, programação orientada a objetos e docker. Acredito que esses conhecimentos técnicos
@@ -51,6 +51,7 @@ function AboutMe() {
               <div className="skills">
                 <div className="skills__skill">Javascript</div>
                 <div className="skills__skill">Typescript</div>
+                <div className="skills__skill">Java (Básico)</div>
                 <div className="skills__skill">NodeJs</div>
                 <div className="skills__skill">ExpressJs</div>
                 <div className="skills__skill">MySQL</div>
@@ -60,6 +61,9 @@ function AboutMe() {
                 <div className="skills__skill">Git</div>
                 <div className="skills__skill">POO</div>
                 <div className="skills__skill">Docker</div>
+                <div className="skills__skill">Testes Unitários/Integração</div>
+                <div className="skills__skill">Inglês</div>
+                <div className="skills__skill">Front-end</div>
               </div>
             </Fade>
           </div>
