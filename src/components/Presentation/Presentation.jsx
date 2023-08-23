@@ -1,6 +1,6 @@
 import './Presentation.css';
 import Typewriter from 'typewriter-effect';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-reveal';
 
 import linkedinIcon from '../../assets/png/linkedin-ico.png';
 import githubIcon from '../../assets/png/github-ico.png';
@@ -35,7 +35,7 @@ function Presentation() {
           <a href="./#projects" className="btn-mine btn--bg">Projetos</a>
         </div>
       </div>
-      <Fade triggerOnce duration={1500}>
+      <Fade left duration={1500}>
         <div className="home-hero__socials">
           <div className="home-hero__social">
             <a href="https://www.linkedin.com/in/rikelmy-lopes/" target={'_blank'}

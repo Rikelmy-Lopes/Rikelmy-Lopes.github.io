@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Skeleton from 'react-loading-skeleton';
 import axios from 'axios';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-reveal';
 
 const ProjectCard = ({ value }) => {
   const {
@@ -16,7 +16,7 @@ const ProjectCard = ({ value }) => {
   } = value;
   return (
     <Col md={6}>
-      <Fade triggerOnce direction='left' duration={2000}>
+      <Fade left duration={2000}>
         <Card className="card p-3 mb-5 bg-white rounded border border-dark">
           <Card.Body style={{
             fontSize: '200%'

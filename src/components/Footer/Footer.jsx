@@ -1,5 +1,5 @@
 import './Footer.css';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-reveal';
 
 import LinkedinIcon from '../../assets/png/linkedin-ico.png';
 import GithubIcon from '../../assets/png/github-ico.png';
@@ -7,7 +7,7 @@ import InstaIcon from '../../assets/png/insta-ico.png';
 
 function Footer() {
   return (
-    <Fade triggerOnce direction='left' duration={2000}>
+    <Fade left duration={2000}>
       <footer className="main-footer">
         <div className="main-container">
           <div className="main-footer__upper">

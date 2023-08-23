@@ -96,7 +96,7 @@
 
 .project-cs-hero {
     color: #fff;
-    background: linear-gradient(to right, rgb(0 98 185 / 80%), rgb(0 98 185 / 80%)), url("../assets/svg/common-bg.svg");
+    background: linear-gradient(to right, rgb(0 98 185 / 80%), rgb(0 98 185 / 80%)), url("../../assets/svg/common-bg.svg");
     background-size: cover;
     background-position: center;
     position: relative; }

@@ -1,4 +1,4 @@
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-reveal';
 import './Header.css';
 
 import profileImage from '../../assets/jpeg/profile-image.jpg';
@@ -28,35 +28,8 @@ function Header() {
     }
   };
 
-  // window.onload = () => {
-  //   const smallMenu = document.querySelector('.header__sm-menu');
-  //   const headerHamMenuBtn = document.querySelector('.header__main-ham-menu');
-  //   const headerHamMenuCloseBtn = document.querySelector(
-  //     '.header__main-ham-menu-close'
-  //   );
-
-  //   const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link');
-
-  //   for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  //     headerSmallMenuLinks[i].addEventListener('click', () => {
-  //       smallMenu.classList.remove('header__sm-menu--active');
-  //       headerHamMenuBtn.classList.remove('d-none');
-  //       headerHamMenuCloseBtn.classList.add('d-none');
-  //     });
-  //   }
-
-  //   // ---
-  //   const headerLogoConatiner = document.querySelector('.header__logo-container');
-
-  //   headerLogoConatiner.addEventListener('click', () => {
-  //     // eslint-disable-next-line no-restricted-globals
-  //     location.href = 'index.html';
-  //   });
-  // };
-
-
   return (
-    <Fade triggerOnce direction='down' duration={1500}>
+    <Fade down duration={1500}>
       <header className="header">
         <div className="header__content">
           <div className="header__logo-container">

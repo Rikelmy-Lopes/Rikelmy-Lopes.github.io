@@ -1,7 +1,7 @@
 /* stylelint-disable selector-class-pattern */
 
 .contact {
-    background: linear-gradient(to right, rgb(0 0 0 / 90%), rgb(0 0 0 / 90%)), url("../assets/svg/common-bg.svg");
+    background: linear-gradient(to right, rgb(0 0 0 / 90%), rgb(0 0 0 / 90%)), url("../../assets/svg/common-bg.svg");
     background-size: cover;
     background-position: center; }
 

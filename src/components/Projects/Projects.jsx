@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './Projects.css';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-reveal';
 import Container from 'react-bootstrap/Container';
 import { Jumbotron } from '../migration';
 import Row from 'react-bootstrap/Row';
@@ -61,7 +61,7 @@ const Project = ({ heading, username, length, specfic }) => {
     <div id="projects" className='projects-container'>
       <Jumbotron fluid className="bg-white m-0">
         <Container>
-          <Fade triggerOnce direction='up' duration={1500}>
+          <Fade up duration={1500}>
             <h2 className="display-3 pb-5 text-center">
               <span className='projects-sec__main' > {heading} </span>
               <span className='heading-sec__sub'> Alguns Projetos Back-end Desenvolvidos por Mim! </span>

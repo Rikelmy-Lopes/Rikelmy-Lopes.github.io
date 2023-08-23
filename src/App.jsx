@@ -8,7 +8,7 @@ import { repos } from './config';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Presentation />
       <AboutMe />
@@ -19,7 +19,7 @@ function App() {
         specfic={repos.specificRepos} />
       <ContactMe />
       <Footer />
-    </div>
+    </>
   );
 }
 

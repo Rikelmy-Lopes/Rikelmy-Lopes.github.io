@@ -21,7 +21,7 @@
 
 .home-hero__socials {
     position: absolute;
-    top: 50%;
+    top: 35%;
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     transform: translateY(-50%);

@@ -1,15 +1,14 @@
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import { emailjsInfo } from '../../config';
 import './ContactMe.css';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-reveal';
 
 function ContactMe() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  emailjs.init(emailjsInfo.publicKey);
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
   const isEmailValid = () => {
     const regex = /\S+@\S+\.\S+/;
@@ -49,7 +48,7 @@ function ContactMe() {
       message: message,
     };
 
-    emailjs.send(emailjsInfo.serviceId, emailjsInfo.templateId, template_params)
+    emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, template_params)
       .then(() => {
         statusFormSuccess();
         setName(''); setEmail(''); setMessage('');
@@ -63,13 +62,13 @@ function ContactMe() {
   return (
     <section id="contact" className="contact sec-pad dynamicBg">
       <div className="main-container">
-        <Fade triggerOnce direction='uṕ' duration={1500}>
+        <Fade up duration={1500}>
           <h2 className="heading heading-sec heading-sec__mb-med">
             <span className="heading-sec__main heading-sec__main--lt">Contato</span>
             <span className="heading-sec__sub heading-sec__sub--lt"></span>
           </h2>
         </Fade>
-        <Fade triggerOnce direction='right' duration={2000}>
+        <Fade right duration={2000}>
           <div className="contact__form-container">
             <form action="#" className="contact__form">
               <div className="contact__form-field">
